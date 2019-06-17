@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="986.0" prefWidth="1565.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.test.controller.CustomerPanelController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="980.0" prefWidth="1654.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Customer Panel" textFill="#ff9d0f">
+               <font>
+                  <Font name="Calibri Light" size="44.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tblCustomer" layoutX="477.0" layoutY="577.0" onMouseClicked="#onMousClicked_table" prefHeight="188.0" prefWidth="625.0" AnchorPane.leftAnchor="477.0" AnchorPane.rightAnchor="552.0">
+               <columns>
+                  <TableColumn prefWidth="108.0" text="Customer ID" />
+                  <TableColumn prefWidth="101.0" text="Name" />
+                  <TableColumn prefWidth="166.0" text="Address" />
+                  <TableColumn prefWidth="123.0" text="NIC" />
+                  <TableColumn prefWidth="130.0" text="Telephone" />
+               </columns>
+            </TableView>
+            <JFXButton layoutX="530.0" layoutY="490.0" onAction="#onAction_Reg" prefHeight="41.0" prefWidth="114.0" styleClass="loginButton" stylesheets="@../css/LoginStyle.css" text="Register" />
+            <JFXButton layoutX="664.0" layoutY="490.0" onAction="#onAction_Update" prefHeight="41.0" prefWidth="114.0" styleClass="loginButton" stylesheets="@../css/LoginStyle.css" text="Update" />
+            <JFXButton layoutX="791.0" layoutY="490.0" onAction="#onAction_Delete" prefHeight="41.0" prefWidth="114.0" styleClass="loginButton" stylesheets="@../css/LoginStyle.css" text="Remove" />
+            <JFXTextField fx:id="txt_CustomerID" labelFloat="true" layoutX="468.0" layoutY="215.0" onAction="#request" prefHeight="31.0" prefWidth="592.0" promptText="Customer ID" unFocusColor="#4d4d4da3" />
+            <JFXTextField fx:id="txt_CustomerName" labelFloat="true" layoutX="468.0" layoutY="266.0" onAction="#customerNamerequest" prefHeight="31.0" prefWidth="592.0" promptText="Customer Name" />
+            <JFXTextField fx:id="txt_CustomerAddress" labelFloat="true" layoutX="468.0" layoutY="325.0" onAction="#customerAddress" prefHeight="31.0" prefWidth="592.0" promptText="Customer Address" />
+            <JFXTextField fx:id="txt_NIC" labelFloat="true" layoutX="468.0" layoutY="376.0" onAction="#customerNic" prefHeight="31.0" prefWidth="592.0" promptText="NIC" />
+            <JFXTextField fx:id="txt_TP" labelFloat="true" layoutX="468.0" layoutY="429.0" prefHeight="31.0" prefWidth="592.0" promptText="T.P" />
+            <JFXButton layoutX="1274.0" layoutY="274.0" onAction="#onAction_Search" prefHeight="41.0" prefWidth="259.0" styleClass="loginButton" stylesheets="@../css/LoginStyle.css" text="Search" />
+            <JFXTextField fx:id="txt_Search" layoutX="1272.0" layoutY="229.0" prefHeight="31.0" prefWidth="264.0" promptText="Search" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.MeshView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="961.0" prefWidth="1570.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.test.controller.PayemntPanelController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="980.0" prefWidth="1654.0">
+         <children>
+            <AnchorPane fx:id="item_panal" layoutX="2.0" prefHeight="980.0" prefWidth="1654.0">
+               <children>
+                  <Label layoutX="24.0" layoutY="24.0" text="Payment Panal" textFill="#ff9b0f" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="15.0">
+                     <font>
+                        <Font name="Calibri Light" size="44.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txt_PId" labelFloat="true" layoutX="440.0" layoutY="198.0" onAction="#onActionPaymentId" prefWidth="300.0" promptText="Payment ID" AnchorPane.leftAnchor="440.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txt_PName" labelFloat="true" layoutX="440.0" layoutY="265.0" onAction="#onActionPaymentName" prefWidth="300.0" promptText="Payment  Name" AnchorPane.leftAnchor="440.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txt_PPrice" labelFloat="true" layoutX="440.0" layoutY="333.0" onAction="#onActionPaymentPrice" prefWidth="300.0" promptText="Price" AnchorPane.leftAnchor="440.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton layoutX="590.0" layoutY="439.0" onAction="#onAction_P_Add" prefHeight="41.0" prefWidth="114.0" styleClass="loginButton" stylesheets="@../css/LoginStyle.css" text="Add" />
+                  <JFXButton layoutX="723.0" layoutY="439.0" onAction="#onAction_P_Update" prefHeight="41.0" prefWidth="114.0" styleClass="loginButton" stylesheets="@../css/LoginStyle.css" text="Update" />
+                  <JFXButton layoutX="851.0" layoutY="439.0" onAction="#onAction_P_Delete" prefHeight="41.0" prefWidth="114.0" styleClass="loginButton" stylesheets="@../css/LoginStyle.css" text="Delete" />
+                  <JFXTextField fx:id="txt_PItemUnitPrice" labelFloat="true" layoutX="815.0" layoutY="198.0" onAction="#onActionPaymentUnitPrice" prefWidth="300.0" promptText="Item Unit Price">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txt_PIQty" labelFloat="true" layoutX="815.0" layoutY="265.0" onAction="#onActionPaymentQty" prefWidth="300.0" promptText="Item Quantity">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txt_PDate" labelFloat="true" layoutX="815.0" layoutY="333.0" onAction="#onActionPaymentDate" prefWidth="300.0" promptText="Payment Date">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <TableView fx:id="tbl_Payment" layoutX="469.0" layoutY="547.0" onMouseClicked="#onMouseclicked_P_Table" prefHeight="200.0" prefWidth="673.0">
+                     <columns>
+                        <TableColumn prefWidth="104.0" text="Payment ID" />
+                        <TableColumn prefWidth="86.0" text="Name" />
+                        <TableColumn prefWidth="115.0" text="Price" />
+                        <TableColumn prefWidth="122.0" text="Unit Price" />
+                        <TableColumn prefWidth="122.0" text="Item Quantity" />
+                        <TableColumn prefWidth="122.0" text="Payment Date" />
+                     </columns>
+                  </TableView>
+                  <MeshView layoutX="315.0" layoutY="385.0" />
+                  <JFXButton layoutX="982.0" layoutY="439.0" onAction="#onAction_P_Search" prefHeight="41.0" prefWidth="114.0" styleClass="loginButton" stylesheets="@../css/LoginStyle.css" text="Search" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,124 @@
+
+.stage_background{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #ff8f20, #ffc107);
+}
+
+.userName_text{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5px;
+    -fx-padding: 18px 15px 10px 15px;
+    -fx-effect: dropshadow(three-pass-box, rgb(152, 155, 147), 15, 0, 0, 0);
+}
+
+.password_text{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5px;
+    -fx-padding: 18px 15px 10px 15px;
+    -fx-effect: dropshadow(three-pass-box, rgb(152, 155, 147), 15, 0, 0, 0);
+}
+
+.loginButton{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #ffaf2b, #ffc107);
+    -fx-background-radius: 30px;
+    -fx-padding: 7px 15px 7px 15px;
+    -fx-effect: dropshadow(three-pass-box, rgb(152, 155, 147), 15, 0, 0, 0);
+}
+
+.loginButton:hover{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #ffc107, #ffaf2b);
+    -fx-background-radius: 30px;
+    -fx-padding: 7px 15px 7px 15px;
+    -fx-effect: dropshadow(three-pass-box, rgb(152, 155, 147), 15, 0, 0, 0);
+}
+
+.cancel_btn{
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+    -fx-border-width: 1px;
+    -fx-border-color: white;
+    -fx-padding: 7px 15px 7px 15px;
+}
+
+.cancel_btn:hover{
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+    -fx-border-color: linear-gradient(from 25% 25% to 100% 100%, #ffc107, #ffaf2b);
+    -fx-border-width: 1px;
+    -fx-padding: 7px 15px 7px 15px;
+}
+
+.aminpanel{
+    -fx-background-color: rgba(114, 114, 114, 0.57);
+
+
+
+}
+
+.adminname{
+    -fx-font-family: Arial Rounded MT Bold;
+    -fx-font-size: 20px;
+
+
+}
+
+.leftpannel{
+    -fx-background-color: #2190e8;
+-fx-background-radius: 10px;
+
+
+}
+
+.mainloder{
+    -fx-background-color: rgba(128, 128, 128, 0.09);
+
+
+}
+
+.buttonedt{
+
+    -fx-font-size: 10px;
+-fx-border-radius: 20px;
+
+
+}
+
+.allbutton{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #0c3eff, #1a8bff);
+    -fx-background-radius: 30px;
+    -fx-padding: 7px 15px 7px 15px;
+    -fx-effect: dropshadow(three-pass-box, rgb(118, 121, 113), 15, 0, 0, 0);
+    -fx-font-style: white;
+    -fx-font-family: Sitka Heading;
+
+
+}
+
+.allbutton:hover{
+
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #8ff2ff, #efecff);
+    -fx-background-radius: 30px;
+    -fx-padding: 7px 15px 7px 15px;
+    -fx-effect: dropshadow(three-pass-box, rgb(129, 132, 124), 15, 0, 0, 0);
+
+}
+
+.timedate{
+
+    -fx-font-family:Radioland Slim;
+    -fx-font-size: 30px;
+
+
+}
+
+
+
+.logincolor{
+    -fx-background-color: #218add;
+
+}
+
+.loginbox2{
+    -fx-background-color: rgba(0, 0, 0, 0.11);
+    -fx-background-radius: 20px;
+
+}

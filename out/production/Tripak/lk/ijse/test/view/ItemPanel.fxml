@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="961.0" prefWidth="1570.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.test.controller.ItemPanelController">
+   <children>
+      <AnchorPane fx:id="item_panal" layoutX="10.0" layoutY="10.0" prefHeight="980.0" prefWidth="1654.0">
+         <children>
+            <Label layoutX="24.0" layoutY="24.0" text="Item Panel" textFill="#ff9d0f" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="15.0">
+               <font>
+                  <Font name="Calibri Light" size="44.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txt_itemId" labelFloat="true" layoutX="508.0" layoutY="206.0" onAction="#itemId_Request" prefWidth="300.0" promptText="Item Id" AnchorPane.leftAnchor="508.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt_Item_name" labelFloat="true" layoutX="508.0" layoutY="273.0" onAction="#itemNamere_quest" prefWidth="300.0" promptText="Item Name" AnchorPane.leftAnchor="508.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt_Item_coad" labelFloat="true" layoutX="508.0" layoutY="341.0" onAction="#itemCoad_quest" prefWidth="300.0" promptText="Item Coad" AnchorPane.leftAnchor="508.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="639.0" layoutY="441.0" onAction="#onAction_Iadd" prefHeight="41.0" prefWidth="114.0" styleClass="loginButton" stylesheets="@../css/LoginStyle.css" text="Add" />
+            <JFXButton layoutX="773.0" layoutY="441.0" onAction="#onAction_Update" prefHeight="41.0" prefWidth="114.0" styleClass="loginButton" stylesheets="@../css/LoginStyle.css" text="Update" />
+            <JFXButton layoutX="900.0" layoutY="441.0" onAction="#onAction_Delete" prefHeight="41.0" prefWidth="114.0" styleClass="loginButton" stylesheets="@../css/LoginStyle.css" text="Delete" />
+            <JFXTextField fx:id="txt_Item_UnitPrice" labelFloat="true" layoutX="883.0" layoutY="206.0" onAction="#itemUnitPrice_quest" prefWidth="300.0" promptText="Item Unit Price">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt_Item_Qty" labelFloat="true" layoutX="883.0" layoutY="273.0" onAction="#itemqty_quest" prefWidth="300.0" promptText="Item Quantity">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt_Item_Exp" labelFloat="true" layoutX="883.0" layoutY="341.0" onAction="#expD_quest" prefWidth="300.0" promptText="Expiry Date">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <TableView fx:id="blItem" layoutX="496.0" layoutY="548.0" onMouseClicked="#onMouseClicked_Itable" prefHeight="200.0" prefWidth="673.0">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="Item ID" />
+                  <TableColumn prefWidth="115.0" text="Item Name" />
+                  <TableColumn prefWidth="115.0" text="Item Coad" />
+                  <TableColumn prefWidth="122.0" text="Item Unit Price" />
+                  <TableColumn prefWidth="122.0" text="Item Quantity" />
+                  <TableColumn prefWidth="122.0" text="Expiry Date" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="signin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.test.controller.LoginController">
+   <children>
+      <AnchorPane layoutX="159.0" prefHeight="500.0" prefWidth="482.0" styleClass="logincolor" stylesheets="@../css/LoginStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="471.0" layoutX="19.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0" />
+            <Text fill="WHITE" layoutX="138.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tripak.lk">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="50.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="171.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Developed  and Design By Tripak.lk Studio">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="548.0" layoutY="34.0" prefHeight="500.0" prefWidth="411.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="6.0" layoutY="146.0" prefHeight="271.0" prefWidth="401.0" styleClass="loginbox2" stylesheets="@../css/LoginStyle.css" />
+            <JFXTextField fx:id="userName_Txt" focusColor="#ffae00" labelFloat="true" layoutX="50.0" layoutY="215.0" onAction="#request" promptText="User Name" styleClass="userName_text" stylesheets="@../css/LoginStyle.css" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+               <font>
+                  <Font name="Calibri Light" size="14.0" />
+               </font>
+            </JFXTextField>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="328.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/userName.png" />
+               </image>
+            </ImageView>
+            <JFXPasswordField fx:id="password_txt" focusColor="#ffae00" labelFloat="true" layoutX="50.0" layoutY="283.0" onAction="#request" promptText="Password" styleClass="password_text" stylesheets="@../css/LoginStyle.css" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+               <font>
+                  <Font name="Calibri Light" size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="328.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/password.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="loginBtn" layoutX="194.0" layoutY="356.0" onAction="#loginBtn_OnAction" prefHeight="36.0" prefWidth="145.0" styleClass="loginButton" stylesheets="@../css/LoginStyle.css" text="Login" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/login.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Roboto Light" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="111.0" layoutY="356.0" styleClass="cancel_btn" stylesheets="@../css/LoginStyle.css" text="Cancel" textFill="#0d0d0c">
+               <font>
+                  <Font name="Roboto Light" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="127.0" fitWidth="183.0" layoutX="104.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/mylogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

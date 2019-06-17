@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.test.controller.MainStageController">
+   <children>
+      <AnchorPane layoutX="159.0" prefHeight="500.0" prefWidth="490.0" styleClass="stage_background" stylesheets="@../css/LoginStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="490.0" layoutX="160.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="548.0" layoutY="34.0" prefHeight="500.0" prefWidth="411.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="userName_Txt" focusColor="#ffae00" labelFloat="true" layoutX="50.0" layoutY="215.0" promptText="User Name" styleClass="userName_text" stylesheets="@../css/LoginStyle.css" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+               <font>
+                  <Font name="Calibri Light" size="14.0" />
+               </font>
+            </JFXTextField>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="328.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/userName.png" />
+               </image>
+            </ImageView>
+            <JFXPasswordField fx:id="password_txt" focusColor="#ffae00" labelFloat="true" layoutX="50.0" layoutY="283.0" promptText="Password" styleClass="password_text" stylesheets="@../css/LoginStyle.css" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+               <font>
+                  <Font name="Calibri Light" size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="328.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/password.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="login_Btn" layoutX="194.0" layoutY="356.0" onAction="#loginBtn_OnAction" prefHeight="36.0" prefWidth="145.0" styleClass="loginButton" stylesheets="@../css/LoginStyle.css" text="Login" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/login.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Roboto Light" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="111.0" layoutY="356.0" styleClass="cancel_btn" stylesheets="@../css/LoginStyle.css" text="Cancel" textFill="#ffc107">
+               <font>
+                  <Font name="Roboto Light" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

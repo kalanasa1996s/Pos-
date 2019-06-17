@@ -1,0 +1,10 @@
+
+Qsquid:S1191"5Use classes from the Java API instead of Sun classes.(°ÜÃ´8£ñ¼¦ž-
+vsquid:S00116"TRename this field "login_Btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Äá¿ÿûÿÿÿÿ8£ñ¼¦ž-
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8£ñ¼¦ž-
+wsquid:S2068"V'password' detected in this expression, review this potentially hard-coded credential.(¼ç»Öúÿÿÿÿ8£ñ¼¦ž-
+tsquid:S00116"WRename this field "userName_Txt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á–ìÑ8£ñ¼¦ž-
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÛŒ¦…ýÿÿÿÿ8£ñ¼¦ž-
+hsquid:UselessImportCheck"?Remove this unused import 'sun.plugin.javascript.navig.Anchor'.(°ÜÃ´8£ñ¼¦ž-
+ysquid:S00116"WRename this field "password_txt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»äÇ½ûÿÿÿÿ8£ñ¼¦ž-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(þ«ð¬8£ñ¼¦ž-
